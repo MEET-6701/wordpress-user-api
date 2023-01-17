@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Users</h2>
+      <button class="btn btn-warning">Add NEW</button>
+      <table id="table_id" class="table" class="display">
+        <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">username</th>
+            <th scope="col">user Emmil</th>
+            <th scope="col">user_registered</th>
+            <th scope="col">update</th>
+            <th scope="col">delete</th>
+          </tr>
+        </thead>
+        <tbody id="data"></tbody>
+      </table>
+    </div>
+    <div class="container hide-form" style="display: none">
+      <div class="close">
+        <p>X</p>
+      </div>
+      <h2>edit user</h2>
+      <form class="update-form">
+        <label for="exampleInputEmail1" class="form-label">User name </label>
+        <input
+          type="text"
+          class="form-control"
+          id="update-user"
+          aria-describedby="emailHelp"
+        />
+        <input
+          type="text"
+          class="form-control"
+          id="update-id"
+          aria-describedby="emailHelp"
+          hidden
+        />
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input
+          type="email"
+          class="form-control mb-3"
+          id="update-mail"
+          aria-describedby="emailHelp"
+        />
+        <input type="submit" class="btn btn-primary" name="update" />
+      </form>
+    </div>
+
+    <div class="container hide-insert" style="display: none">
+      <div class="close-add">
+        <p>X</p>
+      </div>
+      <h2>Add user</h2>
+      <form class="insert">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">User name </label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputuser1"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+          <div id="emailHelp" class="form-text">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
